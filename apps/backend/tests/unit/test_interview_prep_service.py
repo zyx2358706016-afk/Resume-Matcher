@@ -50,7 +50,32 @@ async def test_generate_interview_prep_validates_successful_json():
 
     assert result.role_fit_analysis == ["Python API experience is relevant."]
     mock_complete.assert_awaited_once()
+    assert mock_complete.await_args.kwargs["max_tokens"] == 8192
     assert mock_complete.await_args.kwargs["schema_type"] == "interview_prep"
+
+
+@pytest.mark.asyncio
+async def test_generate_interview_prep_bounds_prompt_inputs():
+    with patch(
+        "app.services.interview_prep.complete_json",
+        new_callable=AsyncMock,
+    ) as mock_complete:
+        mock_complete.return_value = _valid_payload()
+
+        large_resume = {
+            **SAMPLE_RESUME,
+            "summary": "Backend engineer " + ("with API delivery evidence. " * 3000),
+        }
+        await generate_interview_prep(
+            large_resume,
+            "Need FastAPI. " + ("Detailed requirement. " * 1500),
+            "en",
+        )
+
+    prompt = mock_complete.await_args.kwargs["prompt"]
+    assert len(prompt) < 50_000
+    assert "Content truncated for prompt length" in prompt
+    assert "do not infer or invent omitted details" in prompt
 
 
 @pytest.mark.asyncio

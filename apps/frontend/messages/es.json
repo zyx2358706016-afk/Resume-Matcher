@@ -177,7 +177,7 @@
       "coverLetter": "CARTA",
       "outreach": "MENSAJE",
       "jdMatch": "COINCIDENCIA JD",
-      "interviewPrep": "PREPARACION"
+      "interviewPrep": "PREPARACIÓN"
     },
     "footer": {
       "moduleLabel": "Módulo del constructor",
@@ -197,8 +197,8 @@
       "generateButton": "Generar {title}",
       "coverLetterFooter": "Consejo: adapta primero para mejores resultados.",
       "outreachFooter": "Consejo: manténlo breve y personalizado.",
-      "interviewPrepDescription": "Genera preparacion para entrevistas segun tu curriculum adaptado y la descripcion del puesto.",
-      "interviewPrepFooter": "Consejo: usalo despues de adaptar el curriculum para preparar respuestas veraces basadas en evidencia."
+      "interviewPrepDescription": "Genera preparación para entrevistas según tu currículum adaptado y la descripción del puesto.",
+      "interviewPrepFooter": "Consejo: úsalo después de adaptar el currículum para preparar respuestas veraces basadas en evidencia."
     },
     "regenerateDialog": {
       "title": "¿Regenerar {title}?",
@@ -448,7 +448,7 @@
       "coverLetterEditor": "Editor de carta",
       "outreachEditor": "Editor de mensaje",
       "jdMatchAnalysis": "Análisis de coincidencia JD",
-      "interviewPrep": "Preparacion de entrevista"
+      "interviewPrep": "Preparación de entrevista"
     },
     "alerts": {
       "saveNotAvailable": "Guardar solo está disponible al editar un currículum existente.",
@@ -466,7 +466,7 @@
       "outreachSaveFailed": "No se pudo guardar el mensaje de contacto. Por favor, inténtalo de nuevo.",
       "coverLetterGenerateFailed": "No se pudo generar la carta de presentación: {error}",
       "outreachGenerateFailed": "No se pudo generar el mensaje de contacto: {error}",
-      "interviewPrepGenerateFailed": "No se pudo generar la preparacion de entrevista: {error}"
+      "interviewPrepGenerateFailed": "No se pudo generar la preparación de entrevista: {error}"
     }
   },
   "enrichment": {
@@ -712,8 +712,8 @@
       "customPromptResetButton": "Restablecer al predeterminado",
       "customPromptErrorMissing": "Faltan marcadores requeridos: {missing}",
       "interviewPrep": {
-        "label": "Preparacion de entrevista",
-        "description": "Genera automaticamente preparacion de entrevista junto con los curriculums adaptados guardados"
+        "label": "Preparación de entrevista",
+        "description": "Genera automáticamente preparación de entrevista junto con los currículums adaptados guardados"
       }
     },
     "promptSettings": {
@@ -1017,19 +1017,19 @@
     }
   },
   "interviewPrep": {
-    "title": "Preparacion de entrevista",
+    "title": "Preparación de entrevista",
     "regenerate": "Regenerar",
-    "unavailableTitle": "Preparacion no disponible",
-    "loadingContextDescription": "Comprobando el contexto del puesto para este curriculum adaptado antes de generar.",
-    "missingContextDescription": "Este curriculum adaptado no tiene el contexto del puesto guardado que se necesita para generar preparacion de entrevista. Vuelve a adaptar el curriculum con una descripcion del puesto.",
-    "saveRequiredDescription": "Guarda este curriculum adaptado antes de generar preparacion de entrevista.",
-    "focusArea": "Area de enfoque",
+    "unavailableTitle": "Preparación no disponible",
+    "loadingContextDescription": "Comprobando el contexto del puesto para este currículum adaptado antes de generar.",
+    "missingContextDescription": "Este currículum adaptado no tiene el contexto del puesto guardado que se necesita para generar preparación de entrevista. Vuelve a adaptar el currículum con una descripción del puesto.",
+    "saveRequiredDescription": "Guarda este currículum adaptado antes de generar preparación de entrevista.",
+    "focusArea": "Área de enfoque",
     "suggestedAnswerPoints": "Puntos sugeridos para responder",
-    "whyItMatters": "Por que importa",
-    "preparationSuggestion": "Sugerencia de preparacion",
+    "whyItMatters": "Por qué importa",
+    "preparationSuggestion": "Sugerencia de preparación",
     "sections": {
-      "roleFit": "Analisis de encaje",
-      "resumeQuestions": "Preguntas basadas en el curriculum",
+      "roleFit": "Análisis de encaje",
+      "resumeQuestions": "Preguntas basadas en el currículum",
       "projectFollowUps": "Seguimiento de proyectos",
       "skillGaps": "Brechas de habilidades",
       "talkingPoints": "Puntos clave"

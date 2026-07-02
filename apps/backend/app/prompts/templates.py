@@ -399,6 +399,7 @@ Output plain text only. No JSON, no markdown formatting."""
 INTERVIEW_PREP_PROMPT = """Generate structured interview preparation for this tailored resume and job.
 
 IMPORTANT: Write in {output_language}.
+Do NOT translate JSON property names. Keep every JSON key exactly as shown in the schema; translate only string values.
 
 Job Description:
 {job_description}

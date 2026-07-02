@@ -107,4 +107,19 @@ describe('InterviewPrepView', () => {
     expect(screen.getByText('Kubernetes')).toBeInTheDocument();
     expect(screen.getByText('Connect API work to the role.')).toBeInTheDocument();
   });
+
+  it('shows a default unavailable message for generated prep when regeneration is blocked', () => {
+    render(
+      <InterviewPrepView
+        interviewPrep={interviewPrep}
+        isGenerating={false}
+        onGenerate={vi.fn()}
+        isTailoredResume
+        canGenerate={false}
+      />
+    );
+
+    expect(screen.getByText('interviewPrep.missingContextDescription')).toBeInTheDocument();
+    expect(screen.getByText('Backend API experience fits the role.')).toBeInTheDocument();
+  });
 });

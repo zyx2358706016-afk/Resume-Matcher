@@ -77,6 +77,23 @@ GET /jobs/{id}             → {job_id, content, created_at}
 }
 ```
 
+### ResumeData
+`PATCH /resumes/{id}` accepts the structured resume payload stored in
+`processed_data`, for example:
+
+```json
+{
+  "personalInfo": {...},
+  "summary": "...",
+  "workExperience": [...],
+  "education": [...],
+  "personalProjects": [...],
+  "additional": {...},
+  "customSections": {...},
+  "sectionMeta": [...]
+}
+```
+
 ### Error Response
 ```json
 {

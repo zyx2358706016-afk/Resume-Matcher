@@ -135,12 +135,7 @@ export function InterviewPrepView({
           </div>
         )}
         {isTailoredResume && !canGenerate ? (
-          <div
-            className={cn(
-              'flex flex-col items-center justify-center min-h-[400px] p-12 text-center',
-              className
-            )}
-          >
+          <div className="flex flex-col items-center justify-center min-h-[400px] p-12 text-center">
             <div className="w-16 h-16 border-2 border-amber-700 bg-amber-50 flex items-center justify-center mb-6">
               <AlertTriangle className="w-8 h-8 text-amber-700" />
             </div>
@@ -171,10 +166,12 @@ export function InterviewPrepView({
           <p className="text-sm font-mono leading-relaxed">{error}</p>
         </div>
       )}
-      {isTailoredResume && !canGenerate && unavailableMessage && (
+      {isTailoredResume && !canGenerate && (
         <div className="flex items-start gap-3 border-2 border-amber-700 bg-amber-50 p-4 text-amber-900">
           <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
-          <p className="text-sm font-mono leading-relaxed">{unavailableMessage}</p>
+          <p className="text-sm font-mono leading-relaxed">
+            {unavailableMessage ?? t('interviewPrep.missingContextDescription')}
+          </p>
         </div>
       )}
 

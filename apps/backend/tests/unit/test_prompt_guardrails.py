@@ -49,5 +49,6 @@ class TestAntiFabricationClausesPresent:
         assert "Do NOT invent experience" in INTERVIEW_PREP_PROMPT
         assert "tools, employers, metrics, certifications, skills" in INTERVIEW_PREP_PROMPT
         assert "Skill gaps are preparation targets only" in INTERVIEW_PREP_PROMPT
+        assert "Do NOT translate JSON property names" in INTERVIEW_PREP_PROMPT
         assert "role_fit_analysis" in INTERVIEW_PREP_PROMPT
         assert "talking_points" in INTERVIEW_PREP_PROMPT

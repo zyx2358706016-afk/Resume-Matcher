@@ -190,9 +190,9 @@ class Database:
         processing_status: str = "pending",
         cover_letter: str | None = None,
         outreach_message: str | None = None,
-        interview_prep: str | None = None,
         title: str | None = None,
         original_markdown: str | None = None,
+        interview_prep: str | None = None,
     ) -> dict[str, Any]:
         """Create a new resume entry.
 
@@ -251,9 +251,9 @@ class Database:
         processing_status: str = "pending",
         cover_letter: str | None = None,
         outreach_message: str | None = None,
-        interview_prep: str | None = None,
         original_markdown: str | None = None,
         title: str | None = None,
+        interview_prep: str | None = None,
     ) -> dict[str, Any]:
         """Create a new resume with atomic master assignment.
 
