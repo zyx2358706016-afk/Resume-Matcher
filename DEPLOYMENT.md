@@ -12,21 +12,72 @@
 操作系统：
 - Windows 11
 
-开发环境：
-- Python 3.10
-- Conda
-- Git
+使用工具：
+| 工具 | 版本 | 如何检查 | 安装 |
+|------|----------|----------|------|
+| **Python** | 3.13.12 | `python --version` | [python.org](https://python.org) |
+| **Node.js** | 24.18.0 | `node --version` | [nodejs.org](https://nodejs.org) |
+| **npm** | 11.16.0 | `npm --version` | 随 Node.js 一起安装 |
+| **uv** | 0.11.29 | `uv --version` | [astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/) |
+| **Git** |  2.47.0.windows.2 | `git --version` | [git-scm.com](https://git-scm.com) |
 
-主要工具：
-- VS Code
-- Anaconda Prompt
+## 3. 本地运行
 
-## 3. 项目获取
+### 1. 克隆项目
 
-通过 GitHub Fork 项目到个人仓库，
-然后使用 Git Clone 下载到本地。
+git clone https://github.com/srbhr/Resume-Matcher.git
 
-命令：
 
-```bash
-git clone 项目地址
+### 2. 后端配置
+
+进入：
+
+cd apps/backend
+
+
+创建环境：
+
+copy .env.example .env
+
+
+修改 .env（仅以deepseek为例）:
+
+LLM_PROVIDER=deepseek
+
+LLM_MODEL=deepseek-chat
+
+LLM_API_KEY=你的API_KEY
+
+
+安装依赖：
+
+uv sync
+
+
+启动：
+
+uv run app
+
+
+
+### 3. 前端启动
+
+进入：
+
+cd apps/frontend
+
+
+安装：
+
+npm install
+
+
+运行：
+
+npm run dev
+
+
+访问：
+
+http://localhost:3000
+
